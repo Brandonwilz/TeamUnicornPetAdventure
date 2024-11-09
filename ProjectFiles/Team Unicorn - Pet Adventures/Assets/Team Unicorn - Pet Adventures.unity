@@ -922,7 +922,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1054443279}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.4003663, y: -1.09, z: -10}
+  m_LocalPosition: {x: 0.23509884, y: -1.09, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1314,7 +1314,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1771951509}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.4003663, y: -1.09, z: -10}
+  m_LocalPosition: {x: 0.23509884, y: -1.09, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 71395614}
@@ -1730,6 +1730,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -6845151307615070468, guid: da5091d198eb41e4d8063d8bc04aac01, type: 3}
+      propertyPath: m_Constraints
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: -1919921654629722108, guid: da5091d198eb41e4d8063d8bc04aac01, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 549175004586534127, guid: da5091d198eb41e4d8063d8bc04aac01, type: 3}
+      propertyPath: MoveSpeed
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3917733248900244888, guid: da5091d198eb41e4d8063d8bc04aac01, type: 3}
       propertyPath: m_Name
       value: DamageObstacle
