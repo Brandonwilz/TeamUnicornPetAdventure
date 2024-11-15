@@ -56,6 +56,7 @@
     <Analyzer Include="E:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\Environment\MoveCycle.cs" />
     <Compile Include="Assets\Scripts\Player\Player_Movement.cs" />
     <Compile Include="Assets\Scripts\Environment\EnvironmentController.cs" />
     <Compile Include="Assets\Scripts\Player\Player_Base.cs" />
@@ -65,7 +66,7 @@
     <Compile Include="Assets\Scripts\Environment\BottomGround.cs" />
     <Compile Include="Assets\Scripts\Environment\ChunkElementsSpawnSystem.cs" />
     <Compile Include="Assets\Scripts\Environment\Interactive.cs" />
-    <Compile Include="Assets\Scripts\Environment\MoveCycle.cs" />
+    <Compile Include="Assets\Scripts\StartScreen.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
