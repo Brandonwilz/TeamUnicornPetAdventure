@@ -11,7 +11,6 @@ public class EnvironmentController : MonoBehaviour
         if (collision.gameObject.GetComponent<ChunkElementsSpawnSystem>())
         {
             collision.gameObject.transform.position = new Vector3(MovePoint.transform.position.x, 0, 0);
-            collision.gameObject.GetComponent<ChunkElementsSpawnSystem>().SpawnElementsAgain();
         }
     }
 }

@@ -14,15 +14,20 @@ public class Player_Input : MonoBehaviour
     public bool JumpUp = false;
 
     private bool canMove = true;
+    private Coroutine jumpCoroutine;
 
     void Update()
     {
-        if (Input.GetKeyDown(JumpUpKey) && canMove && transform.position.y < 0)
+        if (Input.GetKeyDown(JumpUpKey) && playerBase.IsGrounded)
         {
             canMove = false;
-            playerBase.PlayerJumpDirection = new Vector3(0, 1, 0);
+            playerBase.PlayerMoveY = playerBase.PlayerJumpForce;
             JumpUp = true;
             StartCoroutine(MoveCooldown());
+        }
+        if ((Input.GetKeyUp(JumpUpKey)))
+        {
+            playerBase.PlayerMoveY = 0f;
         }
         if (Input.GetKeyDown(JumpDownKey) && canMove)
         {
@@ -30,6 +35,8 @@ public class Player_Input : MonoBehaviour
             JumpDown = true;
             StartCoroutine(MoveCooldown());
         }
+
+        playerBase.PlayerMoveDirection = new Vector3(playerBase.PlayerMoveX, playerBase.PlayerMoveY, 0f);
     }
 
     IEnumerator MoveCooldown()

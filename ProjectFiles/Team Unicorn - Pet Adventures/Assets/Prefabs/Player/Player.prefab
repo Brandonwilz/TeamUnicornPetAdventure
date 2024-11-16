@@ -149,13 +149,13 @@ Rigidbody2D:
   m_UseAutoMass: 0
   m_Mass: 1
   m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 5
-  m_Material: {fileID: 0}
+  m_AngularDrag: 0
+  m_GravityScale: 1
+  m_Material: {fileID: 6200000, guid: 61f74ba5366495c4ebaa16587f04a7a6, type: 2}
   m_Interpolate: 1
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 5
+  m_Constraints: 4
 --- !u!114 &1281596921253741608
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -186,13 +186,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ea2fd83f916405f4584a8e49eb1e68ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PlayerJumpForce: 17
+  PlayerJumpForce: 5.5
   PlayerSpeed: 2.5
+  PlayerMoveX: 1
+  PlayerMoveY: 0
+  PlayerGravityScale: 30
+  PlayerMinGravityScale: 10
+  ExtraHeightOffset: 0.1
   PlayerMoveDirection: {x: 1, y: 0, z: 0}
-  PlayerJumpDirection: {x: 0, y: 0, z: 0}
   PlayerHp: 2
-  IsGoingBack: 0
+  IsGrounded: 1
+  GoingThroughPlatform: 0
   PlatformTag: Platform
+  PlatformLayerMask:
+    serializedVersion: 2
+    m_Bits: 256
+  Rb: {fileID: 1281596921253741602}
 --- !u!114 &1281596921253741614
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -207,11 +216,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerBase: {fileID: 1281596921253741615}
   playerInput: {fileID: 1281596921253741608}
-  rb: {fileID: 1281596921253741602}
   anim: {fileID: 1281596921253741609}
   PlayerCollider: {fileID: 1281596921253741613}
   cmVrCam: {fileID: 0}
   environment: {fileID: 0}
+  circleCollider2D: {fileID: 1281596921253741613}
 --- !u!95 &1281596921253741609
 Animator:
   serializedVersion: 5

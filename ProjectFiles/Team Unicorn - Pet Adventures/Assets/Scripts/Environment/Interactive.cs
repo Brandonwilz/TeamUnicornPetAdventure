@@ -4,7 +4,7 @@ using UnityEngine;
 public class Interactive : MonoBehaviour
 {
     [SerializeField] private bool DamageToPlayer = false;
-    [SerializeField] private float SpeedChange;
+    [SerializeField] private float SpeedChangePercentage;
 
     [HideInInspector] public Environment environment;
 
@@ -15,7 +15,7 @@ public class Interactive : MonoBehaviour
             Player_Movement player = collision.gameObject.GetComponent<Player_Movement>();
 
             if (DamageToPlayer) player.DamageThePayer();
-            else environment.SpeedChange(SpeedChange);
+            else player.SpeedChangePlayer(SpeedChangePercentage);
         }
     }
 }
