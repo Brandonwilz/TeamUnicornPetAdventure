@@ -7,6 +7,7 @@ public class Player_Movement : MonoBehaviour
 {
     [SerializeField] private Player_Base playerBase;
     [SerializeField] private Player_Input playerInput;
+    [SerializeField] private Player_Sounds playerSounds;
     [SerializeField] private Animator anim;
     [SerializeField] private Collider2D PlayerCollider;
     [SerializeField] private CinemachineVirtualCamera cmVrCam;
@@ -32,6 +33,7 @@ public class Player_Movement : MonoBehaviour
 
     public void DamageThePayer()
     {
+        playerSounds.PlayDamageSound();
         playerBase.PlayerHp--;
         CheckPlayerHp();
     }
@@ -117,5 +119,9 @@ public class Player_Movement : MonoBehaviour
             playerBase.IsGrounded = false;
             playerBase.Rb.gravityScale = playerBase.PlayerGravityScale;
         }
+    }
+
+    public bool isGrounded() {
+        return playerBase.IsGrounded;
     }
 }

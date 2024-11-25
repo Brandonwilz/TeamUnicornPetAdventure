@@ -6,6 +6,6 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Team Unicorn - Pet Adventures.unity
+    path: Assets/Scenes/Team Unicorn - Pet Adventures.unity
     guid: 7eac8dd35a368b24280ebce4c04e270d
   m_configObjects: {}
