@@ -8,7 +8,7 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 1281596921212756917}
+  - component: {fileID: 8192818460851653505}
   - component: {fileID: 1281596921212756916}
   m_Layer: 0
   m_Name: Player_Body
@@ -17,7 +17,7 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &1281596921212756917
+--- !u!4 &8192818460851653505
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -25,8 +25,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1281596921212756906}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 3, y: 3, z: 3}
+  m_LocalPosition: {x: 0, y: -0.095999956, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1281596921253741612}
   m_RootOrder: 0
@@ -73,7 +73,7 @@ SpriteRenderer:
   m_SortingOrder: 10
   m_Sprite: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
   m_Color: {r: 0, g: 0.76639485, b: 0.9056604, a: 1}
-  m_FlipX: 0
+  m_FlipX: 1
   m_FlipY: 0
   m_DrawMode: 0
   m_Size: {x: 0.2, y: 0.2}
@@ -117,7 +117,7 @@ Transform:
   m_LocalPosition: {x: -6.5, y: -1.09, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 1281596921212756917}
+  - {fileID: 8192818460851653505}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -218,6 +218,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerBase: {fileID: 1281596921253741615}
   playerInput: {fileID: 1281596921253741608}
+  playerSounds: {fileID: 0}
   anim: {fileID: 1281596921253741609}
   PlayerCollider: {fileID: 1281596921253741613}
   cmVrCam: {fileID: 0}
@@ -260,6 +261,7 @@ MonoBehaviour:
   audioSource: {fileID: 4550685965287996233}
   movementSoundInterval: 0.5
   movementSoundVolume: 0.5
+  damageSoundVolume: 1
 --- !u!82 &4550685965287996233
 AudioSource:
   m_ObjectHideFlags: 0

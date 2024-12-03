@@ -64,10 +64,12 @@
     <Compile Include="Assets\Scripts\Player\Player_Input.cs" />
     <Compile Include="Assets\Scripts\GameOverScreen.cs" />
     <Compile Include="Assets\Scripts\Environment\BottomGround.cs" />
+    <Compile Include="Assets\Scripts\Player\Player_Sounds.cs" />
     <Compile Include="Assets\Scripts\Environment\ChunkElementsSpawnSystem.cs" />
     <Compile Include="Assets\Scripts\Environment\Interactive.cs" />
     <Compile Include="Assets\Scripts\StartScreen.cs" />
-    <Compile Include="Assets\Scripts\Player\Player_Sounds.cs" />
+    <Compile Include="Assets\Scripts\Environment\BackgroundMotion.cs" />
+    <Compile Include="Assets\Scripts\Environment\BackgroundSpriteMotion.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
